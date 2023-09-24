@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-form.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="wrapper">
+		<span class="bg-animate"></span>
+		<span class="bg-animate2"></span>
+
+		<div class="form-box login">
+			<h2 class="animation" style="--i:0;--j:21;">Login</h2>
+			<form action="database/login.php" method="post">
+				<div class="input-box animation" style="--i:1;--j:22;">
+					<input type="tel" name="login_phone" required pattern="[0-9]{10}" title="Enter only 10 digits">
+					<label>Phone number</label>
+					<i class='bx bxs-phone'></i>
+				</div>
+				<div class="input-box animation" style="--i:2;--j:23;">
+					<input type="password" name="login_password" required minlength="8" maxlength="100" title="From 8 to 100 symbols">
+					<label>Password</label>
+					<i class='bx bxs-lock-alt'></i>
+				</div>
+				<button type="submit" class="btn animation" style="--i:3;--j:24;">Login</button>
+				<div class="logreg-link animation" style="--i:4;--j:25;">
+					<p>Don't have an account?
+						<a href="#" class="register-link">Sign up</a>
+					</p>
+				</div>
+			</form>
+		</div>
+		<div class="info-text login">
+			<h2 class="animation" style="--i:0;--j:20;">Welcome Back!</h2>
+			<p class="animation"  style="--i:1;--j:21;">Please enter your information to log in!</p>
+		</div>
+
+		<div class="form-box register">
+			<h2 class="animation" style="--i:17;--j:0;">Sign Up</h2>
+			<form action="database/register.php" method="post">
+				<div class="input-box animation" style="--i:18;--j:1;">
+					<input type="text" name="register_username" required minlength="10" maxlength="1000" title="From 10 to 1000 symbols">
+					<label>Username</label>
+					<i class='bx bxs-user' ></i>
+				</div>
+				<div class="input-box animation" style="--i:19;--j:2;">
+					<input type="number" name="register_age" required min="16" max="100" title="Enter number from 16 to 100">
+					<label>Age</label>
+					<i class='bx bxs-user-x' ></i>
+				</div>
+				<div class="input-box animation" style="--i:20;--j:3;">
+					<input type="text" name="register_email" required minlength="10" maxlength="1000" title="From 10 to 1000 symbols">
+					<label>Email</label>
+					<i class='bx bxs-envelope'></i>
+				</div>
+				<div class="input-box animation" style="--i:21;--j:4;">
+					<input type="text" name="register_phone" required pattern="[0-9]{10}" title="Enter only 10 digits">
+					<label>Phone number</label>
+					<i class='bx bxs-phone'></i>
+				</div>
+				<div class="input-box animation" style="--i:22;--j:5;">
+					<input type="password" name="register_password" required minlength="8" maxlength="100" title="From 8 to 100 symbols">
+					<label>Password</label>
+					<i class='bx bxs-lock-alt'></i>
+				</div>
+				<button type="submit" class="btn animation" style="--i:23;--j:6;">Sign Up</button>
+				<div class="logreg-link animation" style="--i:24;--j:7;">
+					<p>Already have an account?
+						<a href="#" class="login-link">Login</a>
+					</p>
+				</div>
+			</form>
+		</div>
+		<div class="info-text register">
+			<h2 class="animation" style="--i:17; --j:0;">Welcome Back!</h2>
+			<p class="animation" style="--i:18; --j:1;">Please enter your information to sign up!</p>
+		</div>
+	</div>
+	<script src="js/script-form.js"></script>
+</body>
+</html>

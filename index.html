@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="container">    
+        <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="Site Logo">
+                <input class="search-box" type="text" placeholder="Search">
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="nav-button" href="#">Home</a></li>
+                    <li><a class="nav-button" href="#">Portfolio</a></li>
+                    <li><a class="nav-button" href="#">Blog</a></li>
+                    <li><a class="nav-button" href="#">About</a></li>
+                </ul>
+            </nav>
+            <button class="register" onclick="openRegisterPage()">Register</button>
+        </header>
+
+        <section class="welcome">
+            <h1>Welcome</h1>
+            <div class="slider">
+                <img src="images/photo1.jpg" alt="Photo 1">
+                <img src="images/photo2.jpg" alt="Photo 2">
+                <img src="images/photo3.jpg" alt="Photo 3">
+                <button class="prev">❮</button>
+                <button class="next">❯</button>
+            </div>
+        </section>
+
+        <section class="popular-photos">
+            <h2>Popular Stock Fotos</h2>
+            <div class="photo-themes">
+                <div class="theme">
+                    <img src="images/theme1.jpg" alt="Bussiness">
+                    <span class="overlay">+</span>
+                </div>
+                <div class="theme">
+                    <img src="images/theme2.jpg" alt="Pets">
+                    <span class="overlay">+</span>
+                </div>
+                <div class="theme">
+                    <img src="images/theme3.jpg" alt="Theme 1">
+                    <span class="overlay">+</span>
+                </div>
+                <div class="theme">
+                    <img src="images/theme4.jpg" alt="Cars">
+                    <span class="overlay">+</span>
+                </div>
+                <div class="theme">
+                    <img src="images/theme5.jpg" alt="Buildings">
+                    <span class="overlay">+</span>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="social-links">
+            <a href="#"><img src="images/email-icon.png" alt="Email"></a>
+            <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="images/telegram-icon.png" alt="Telegram"></a>
+            <a href="#"><img src="images/youtube-icon.png" alt="YouTube"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
